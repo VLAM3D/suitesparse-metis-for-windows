@@ -56,7 +56,7 @@
 ##
 ## Created by jesnault (jerome.esnault@inria.fr) 2014-01-15
 ## Updated by jesnault (jerome.esnault@inria.fr) 2014-01-21
-
+## Licensed under 3-Claused BSD License. See https://github.com/jlblancoc/suitesparse-metis-for-windows/blob/master/LICENSE.md
 
 ## check if global root SuiteSparse folder is set or not and cache it in order to let user fill it
 if(NOT SuiteSparse_DIR)
@@ -244,7 +244,7 @@ macro(SuiteSparse_FIND_COMPONENTS )
 		list(APPEND SuiteSparse_FOUND_LIST SuiteSparse_${suitesparseCompUC}_FOUND)
 		
 		## special definition needed for metis
-		if(${suitesparseComp} MATCHES "metis")
+		if(NOT ${suitesparseComp} MATCHES "metis")
 			set(SuiteSparse_${suitesparseCompUC}_DEFINITIONS "-DNPARTITION")
 			add_definitions(${SuiteSparse_${suitesparseCompUC}_DEFINITIONS})
 			if(SuiteSparse_VERBOSE)
