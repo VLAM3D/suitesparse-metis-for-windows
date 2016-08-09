@@ -1,6 +1,8 @@
 PROJECT(SPQR)
 
 include_directories("${suitesparseconfig_SOURCE_DIR}")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/../GPUQREngine/Include")
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/../SuiteSparse_GPURuntime/Include")
 include_directories("${SPQR_SOURCE_DIR}/Include")
 include_directories("${CHOLMOD_SOURCE_DIR}/Include")
 
