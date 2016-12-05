@@ -11,4 +11,7 @@
 #define N           (32)
 #define BITTYROWS   (8)
 #define WHOLE_FRONT
+#include "GPUQREngine_Common.hpp"
+#include "GPUQREngine_TaskDescriptor.hpp"
+#include "Kernel/sharedMemory.hpp"
 #include "Kernel/Factorize/factorize_vt.cu"

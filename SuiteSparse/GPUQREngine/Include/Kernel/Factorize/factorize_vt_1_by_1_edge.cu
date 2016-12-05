@@ -12,4 +12,7 @@
 #define M               (ROW_PANELSIZE * TILESIZE)
 #define N               (TILESIZE)
 #define BITTYROWS       (4)
+#include "GPUQREngine_Common.hpp"
+#include "GPUQREngine_TaskDescriptor.hpp"
+#include "Kernel/sharedMemory.hpp"
 #include "Kernel/Factorize/factorize_vt.cu"

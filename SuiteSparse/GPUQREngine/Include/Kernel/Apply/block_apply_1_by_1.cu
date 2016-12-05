@@ -9,4 +9,8 @@
 #define BLOCK_APPLY block_apply_1_by_1
 #define ROW_PANELSIZE 1
 #define COL_PANELSIZE 1
+#include "GPUQREngine_Common.hpp"
+#include "params_apply.hpp"
+#include "GPUQREngine_TaskDescriptor.hpp"
+#include "Kernel/sharedMemory.hpp"
 #include "block_apply.cu"

@@ -48,6 +48,9 @@ SET(LIBSRCS
 	Source/spqr_append.cpp
 	Source/spqr_type.cpp
 	Source/spqr_tol.cpp
+	SPQRGPU/spqrgpu_kernel.cpp
+	SPQRGPU/spqrgpu_computeFrontStaging.cpp
+	SPQRGPU/spqrgpu_buildAssemblyMaps.cpp
 	)
 	
 declare_suitesparse_library(spqr "${LIBSRCS}" "${LIBHDRS}"

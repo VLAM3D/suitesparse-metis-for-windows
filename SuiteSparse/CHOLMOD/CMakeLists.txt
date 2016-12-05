@@ -11,6 +11,9 @@ include_directories("${CHOLMOD_SOURCE_DIR}/Include")
 FILE(GLOB LIBHDRS "${CHOLMOD_SOURCE_DIR}/Include/*.h")
 
 FILE(GLOB LIBSRCS "SourceWrappers/*.c")
+if(WITH_CUDA)
+  #FILE(GLOB CUDA_FILES "gpu/*.c" "gpu/*.cu")
+endif(WITH_CUDA)
 
 declare_suitesparse_library(cholmod "${LIBSRCS}" "${LIBHDRS}"
 	TARGET_PRIVATE_LINK	${SuiteSparse_LINKER_LAPACK_BLAS_LIBS}

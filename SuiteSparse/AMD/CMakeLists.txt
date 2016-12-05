@@ -8,3 +8,4 @@ FILE(GLOB LIBSRCS "SourceWrappers/*.c")
 
 declare_suitesparse_library(amd "${LIBSRCS}" "${LIBHDRS}" )
 
+
