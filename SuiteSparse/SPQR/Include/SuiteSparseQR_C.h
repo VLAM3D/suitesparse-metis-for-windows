@@ -11,11 +11,10 @@
 /* If included by a C++ program, the Complex type is std::complex<double> */
 #include <complex>
 #define Complex std::complex<double>
-extern "C" {
-#endif
-
 #include "cholmod.h"
 #include "SuiteSparseQR_definitions.h"
+extern "C" {
+#endif
 
 #ifndef __cplusplus
 /* The C++ functions will return a pointer to a std::complex<double> array of

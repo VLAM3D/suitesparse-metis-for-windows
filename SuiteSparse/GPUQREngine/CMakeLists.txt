@@ -16,6 +16,6 @@ list(REMOVE_ITEM LIBSRCS "${CMAKE_CURRENT_LIST_DIR}/Include/Kernel/Factorize/fac
 list(REMOVE_ITEM LIBSRCS "${CMAKE_CURRENT_LIST_DIR}/Include/Kernel/qrKernel.cu")
 list(REMOVE_ITEM LIBSRCS "${CMAKE_CURRENT_LIST_DIR}/Include/Kernel/uberKernel.cu")
 
-CUDA_ADD_LIBRARY(GPUQREngine ${LIBHDRS} ${LIBSRCS})
-#declare_suitesparse_library(GPUQREngine "${LIBSRCS}" "${LIBHDRS}")
+#CUDA_ADD_LIBRARY(GPUQREngine ${LIBHDRS} ${LIBSRCS})
+declare_suitesparse_library(GPUQREngine "${LIBSRCS}" "${LIBHDRS}")
 SET(SuiteSparse_GPUQREngine_INCLUDE "${CMAKE_CURRENT_SOURCE_DIR}/Include" PARENT_SCOPE)
